@@ -49,7 +49,7 @@
 
             <!-- The Team -->
             {#if scrollY >= 180 - yOffset}
-                <h3 class="mt-48 text-4xl font-title" transition:fly={{ y:20, delay:300}}>The Team</h3>
+                <h3 class="mt-48 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
             <!--{:else}
                 <div class="mt-48 py-16"></div>-->
             {/if}
@@ -58,7 +58,7 @@
                 <!-- Left Column -->
                 <div class="flex flex-col gap-8">
                     {#if scrollY >= 345 - yOffset}
-                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:300}}>
+                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
@@ -66,7 +66,7 @@
                         </div>
                     {/if}
                     {#if scrollY >= 920 - yOffset}
-                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:300}}>
+                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
@@ -74,7 +74,7 @@
                         </div>
                     {/if}
                     {#if scrollY >= 1496 - yOffset}
-                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:300}}>
+                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
@@ -86,7 +86,7 @@
                 <!-- Right Column -->
                 <div class="flex flex-col gap-8 mt-64"> <!-- Adjust `mt-8` to lower the column -->
                     {#if scrollY >= 600 - yOffset}
-                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:300}}>
+                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
@@ -94,7 +94,7 @@
                         </div>
                     {/if}
                     {#if scrollY >= 1175 - yOffset}
-                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:300}}>
+                        <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
