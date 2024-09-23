@@ -48,13 +48,16 @@
             </div>
 
             <!-- The Vision -->
-            {#if scrollY >= 180 - yOffset}
+            {#if scrollY >= 240 - yOffset}
                 <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
-                <p class="mt-16 text-xl">Our vision is to simplify the process of creating concept images, using artificial intelligence. With our application we will give our users a product that talks to their aesthetic senses and helps them design a kitchen that they can resonate with. </p>
+            {/if}
+
+            {#if scrollY >= 310 - yOffset}
+                <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>Our vision is to simplify the process of creating concept images, using artificial intelligence. With our application we will give our users a product that talks to their aesthetic senses and helps them design a kitchen that they can resonate with. </p>
             {/if}
 
             <!-- The Team -->
-            {#if scrollY >= 180 - yOffset}
+            {#if scrollY >= 660 - yOffset}
                 <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
             <!--{:else}
                 <div class="mt-48 py-16"></div>-->
@@ -63,7 +66,7 @@
             <div class="grid grid-cols-2 gap-8 items-start mt-16">
                 <!-- Left Column -->
                 <div class="flex flex-col gap-8">
-                    {#if scrollY >= 345 - yOffset}
+                    {#if scrollY >= 860 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
@@ -71,7 +74,7 @@
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 920 - yOffset}
+                    {#if scrollY >= 1435 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\herman.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Herman Forsberg</p>
@@ -79,7 +82,7 @@
                             <p class="text-dark-300">hermanfo@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 1496 - yOffset}
+                    {#if scrollY >= 2010 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Aron Lundh</p>
@@ -91,7 +94,7 @@
               
                 <!-- Right Column -->
                 <div class="flex flex-col gap-8 mt-64"> <!-- Adjust `mt-8` to lower the column -->
-                    {#if scrollY >= 600 - yOffset}
+                    {#if scrollY >= 1110 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Oskar Meyer</p>
@@ -99,7 +102,7 @@
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 1175 - yOffset}
+                    {#if scrollY >= 1685 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Hugo Unosson</p>
@@ -111,16 +114,22 @@
             </div>
 
             <!-- About the Course -->
-            <h3 class="mt-64 text-4xl font-title">About the Project</h3>
-            <p class="mt-16 text-xl">
-                We are studiyng at software engineering at Chalmers. Currenlty we are studiyng <br>
-                <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
-                    TEK830 - Digitalization and AI in practice</a>
-                . <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
-                Our team is tasked with developing a software solution for IKEA, 
-                focusing on leveraging advanced technologies such as AI-driven image generation and 
-                regional data insights to create highly relevant and market-specific images. 
-            </p>
+            {#if scrollY >= 2770 - yOffset}
+                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>About the Project</h3>
+            {/if}
+            {#if scrollY >= 2860 - yOffset}
+                <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>
+                    We are studiyng at software engineering at Chalmers. Currenlty we are studiyng <br>
+                    <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
+                        TEK830 - Digitalization and AI in practice</a>
+                    . <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
+                    Our team is tasked with developing a software solution for IKEA, 
+                    focusing on leveraging advanced technologies such as AI-driven image generation and 
+                    regional data insights to create highly relevant and market-specific images. 
+                </p>
+            {:else}
+                <div class="py-64"></div>
+            {/if}
         </main>
 
         <footer class="pt-48 pb-16 text-center">
