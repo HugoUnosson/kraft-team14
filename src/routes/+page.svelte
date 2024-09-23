@@ -73,7 +73,7 @@
                     {/if}
                     {#if scrollY >= 920 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\herman.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Herman Forsberg</p>
                             <p class="text-dark-300">+46 70 750 0980</p>
                             <p class="text-dark-300">hermanfo@chalmers.se</p>
