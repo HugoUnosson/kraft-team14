@@ -6,7 +6,7 @@
     import ArrowDown from "../svg/ArrowDown.svelte";
 
     // Navbar
-    const tabs: string[] = ["About", "Demo", "Refernces"];
+    const tabs: string[] = ["About", "Demo", "References"];
     let selectedTab: string = tabs[0];
 
     // Scroll Animation
@@ -47,9 +47,15 @@
                 <ArrowDown/>
             </div>
 
+            <!-- The Vision -->
+            {#if scrollY >= 180 - yOffset}
+                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
+                <p class="mt-16 text-xl">Our vision is to simplify the process of creating concept images, using artificial intelligence. With our application we will give our users a product that talks to their aesthetic senses and helps them design a kitchen that they can resonate with. </p>
+            {/if}
+
             <!-- The Team -->
             {#if scrollY >= 180 - yOffset}
-                <h3 class="mt-48 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
+                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
             <!--{:else}
                 <div class="mt-48 py-16"></div>-->
             {/if}
@@ -61,24 +67,24 @@
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
-                            <p class="text-dark-300">+46 70 828 5135</p>
+                            <p class="text-dark-300">+46 73 441 1218</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
                     {#if scrollY >= 920 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
-                            <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
-                            <p class="text-dark-300">+46 70 828 5135</p>
-                            <p class="text-dark-300">ludwigal@chalmers.se</p>
+                            <p class="text-dark-300 font-bold">Herman Forsberg</p>
+                            <p class="text-dark-300">+46 70 750 0980</p>
+                            <p class="text-dark-300">hermanfo@chalmers.se</p>
                         </div>
                     {/if}
                     {#if scrollY >= 1496 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
-                            <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
-                            <p class="text-dark-300">+46 70 828 5135</p>
-                            <p class="text-dark-300">ludwigal@chalmers.se</p>
+                            <p class="text-dark-300 font-bold">Aron Lundh</p>
+                            <p class="text-dark-300">+46 73 814 4080</p>
+                            <p class="text-dark-300">aronlu@chalmers.se</p>
                         </div>
                     {/if}
                 </div>
@@ -88,30 +94,40 @@
                     {#if scrollY >= 600 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
-                            <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
-                            <p class="text-dark-300">+46 70 828 5135</p>
+                            <p class="text-dark-300 font-bold">Oskar Meyer</p>
+                            <p class="text-dark-300">+46 70 383 7424</p> 
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
                     {#if scrollY >= 1175 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
-                            <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
+                            <p class="text-dark-300 font-bold">Hugo Unosson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
-                            <p class="text-dark-300">ludwigal@chalmers.se</p>
+                            <p class="text-dark-300">hugou@chalmers.se</p>
                         </div>
                     {/if}
                 </div>
             </div>
 
-            <!-- The Course-->
-             <!--
-            <h3 class="mt-48 text-4xl font-title">TEK830</h3>
-            -->
+            <!-- About the Course -->
+            <h3 class="mt-64 text-4xl font-title">About the Project</h3>
+            <p class="mt-16 text-xl">
+                We are studiyng at software engineering at Chalmers. Currenlty we are studiyng <br>
+                <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
+                    TEK830 - Digitalization and AI in practice</a>
+                . <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
+                Our team is tasked with developing a software solution for IKEA, 
+                focusing on leveraging advanced technologies such as AI-driven image generation and 
+                regional data insights to create highly relevant and market-specific images. 
+            </p>
         </main>
 
-        <footer class="pt-64 text-center">
-            <img src="\Chalmers_Logo.png" alt="Chalmers Logo" class="pb-16">
+        <footer class="pt-48 pb-16 text-center">
+            <div class="flex justify-center gap-16 items-center max-w-full mx-auto overflow-hidden">
+                <img src="/Chalmers_Logo.png" alt="Chalmers Logo" class="w-1/3 max-w-xs h-auto object-contain">
+                <img src="/IKEA-Logo.png" alt="IKEA Logo" class="w-1/3 max-w-xs h-auto object-contain">
+            </div>
         </footer>
     </div>
 </div>
