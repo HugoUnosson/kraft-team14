@@ -59,7 +59,7 @@
                 <div class="flex flex-col gap-8">
                     {#if scrollY >= 345 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
@@ -67,7 +67,7 @@
                     {/if}
                     {#if scrollY >= 920 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
@@ -75,7 +75,7 @@
                     {/if}
                     {#if scrollY >= 1496 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
@@ -87,7 +87,7 @@
                 <div class="flex flex-col gap-8 mt-64"> <!-- Adjust `mt-8` to lower the column -->
                     {#if scrollY >= 600 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
@@ -95,7 +95,7 @@
                     {/if}
                     {#if scrollY >= 1175 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="src\static\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
@@ -111,7 +111,7 @@
         </main>
 
         <footer class="pt-64 text-center">
-            <img src="src\static\Chalmers_Logo.png" alt="Chalmers Logo" class="pb-16">
+            <img src="\Chalmers_Logo.png" alt="Chalmers Logo" class="pb-16">
         </footer>
     </div>
 </div>
