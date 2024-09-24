@@ -13,7 +13,7 @@
         let scrollTarget: number = 0;
 
         if (targetId === "section1") {
-            scrollTarget = 780 - yOffset;
+            scrollTarget = 680 - yOffset;
         }
         else if (targetId === "section2") {
             scrollTarget = 1220 - yOffset;
@@ -51,8 +51,8 @@
 <div class="bg-dark-300 text-white font-body min-h-screen min-w-screen">
     <nav class="fixed top-1/2 -translate-y-1/2 left-4 z-51">
         <ul class="flex flex-col gap-2 text-dark-400">
-          <li><a href="#section1" on:click={scrollTo} class:text-white={275 - yOffset < scrollY && scrollY <= 780 - yOffset}>Our Vision</a></li>
-          <li><a href="#section2" on:click={scrollTo} class:text-white={780 - yOffset < scrollY && scrollY <= 2805 - yOffset}>The Team</a></li>
+          <li><a href="#section1" on:click={scrollTo} class:text-white={275 - yOffset < scrollY && scrollY <= 680 - yOffset}>Our Vision</a></li>
+          <li><a href="#section2" on:click={scrollTo} class:text-white={680 - yOffset < scrollY && scrollY <= 2805 - yOffset}>The Team</a></li>
           <li><a href="#section3" on:click={scrollTo} class:text-white={2805 - yOffset < scrollY}>Background</a></li>
         </ul>
     </nav>
