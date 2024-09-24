@@ -10,17 +10,22 @@
         event.preventDefault(); // Prevent default link behavior
         const target = event.currentTarget as HTMLAnchorElement; 
         const targetId = target.getAttribute('href')?.substring(1); // e.g. section1
-        
-        if (targetId) { 
-            if (targetId == "section3") {
-                
-            }
+        let scrollTarget: number = 0;
 
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
+        if (targetId === "section1") {
+            scrollTarget = 780 - yOffset;
         }
+        else if (targetId === "section2") {
+            scrollTarget = 1220 - yOffset;
+        }
+        else if (targetId === "section3") {
+            scrollTarget = 3280 - yOffset;
+        }
+
+        window.scrollTo({
+            top: scrollTarget, 
+            behavior: 'smooth',
+        });
     }
 
     // Navbar
@@ -33,7 +38,8 @@
 
     let yOffset: number;
     onMount(() => {
-        yOffset = window.innerHeight - 695; // Offset based on screen height. 695 is Hugos screen height.
+        yOffset = window.innerHeight - 730; // Offset based on screen height. 730 is Hugos screen height.
+        console.log(window.innerHeight);
         console.log(yOffset);
     });
 
@@ -43,11 +49,11 @@
 <svelte:window bind:scrollY={scrollY}/>
 
 <div class="bg-dark-300 text-white font-body min-h-screen min-w-screen">
-    <nav class="flex items-center fixed top-1/2 left-4 -translate-y-1/2 z-51">
-        <ul class="flex flex-col gap-2">
-          <li><a href="#section1" on:click={scrollTo}>Our Vision</a></li>
-          <li><a href="#section2" on:click={scrollTo}>The Team</a></li>
-          <li><a href="#section3" on:click={scrollTo}>About the Project</a></li>
+    <nav class="fixed top-1/2 -translate-y-1/2 left-4 z-51">
+        <ul class="flex flex-col gap-2 text-dark-400">
+          <li><a href="#section1" on:click={scrollTo} class:text-white={275 - yOffset < scrollY && scrollY <= 780 - yOffset}>Our Vision</a></li>
+          <li><a href="#section2" on:click={scrollTo} class:text-white={780 - yOffset < scrollY && scrollY <= 2805 - yOffset}>The Team</a></li>
+          <li><a href="#section3" on:click={scrollTo} class:text-white={2805 - yOffset < scrollY}>Background</a></li>
         </ul>
     </nav>
 
@@ -74,18 +80,18 @@
             </div>
 
             <!-- The Vision -->
-            {#if scrollY >= 240 - yOffset}
+            {#if scrollY >= 275 - yOffset}
                 <h3 id="section1" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
             {:else}
                 <div id="section1" class="mt-64 py-32"></div>
             {/if}
 
-            {#if scrollY >= 310 - yOffset}
+            {#if scrollY >= 345 - yOffset}
                 <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>Our vision is to simplify the process of creating concept images, using artificial intelligence. With our application we will give our users a product that talks to their aesthetic senses and helps them design a kitchen that they can resonate with. </p>
             {/if}
 
             <!-- The Team -->
-            {#if scrollY >= 660 - yOffset}
+            {#if scrollY >= 780 - yOffset}
                 <h3 id="section2" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
             {:else}
                 <div id="section2" class="mt-64 py-[1160px]"></div>
@@ -94,7 +100,7 @@
             <div class="grid grid-cols-2 gap-8 items-start mt-16">
                 <!-- Left Column -->
                 <div class="flex flex-col gap-8">
-                    {#if scrollY >= 860 - yOffset}
+                    {#if scrollY >= 895 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Ludwig Alexandersson</p>
@@ -102,7 +108,7 @@
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 1435 - yOffset}
+                    {#if scrollY >= 1470 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\herman.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Herman Forsberg</p>
@@ -110,7 +116,7 @@
                             <p class="text-dark-300">hermanfo@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 2010 - yOffset}
+                    {#if scrollY >= 2045 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Aron Lundh</p>
@@ -122,7 +128,7 @@
               
                 <!-- Right Column -->
                 <div class="flex flex-col gap-8 mt-64"> <!-- Adjust `mt-8` to lower the column -->
-                    {#if scrollY >= 1110 - yOffset}
+                    {#if scrollY >= 1145 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Oskar Meyer</p>
@@ -130,7 +136,7 @@
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
                     {/if}
-                    {#if scrollY >= 1685 - yOffset}
+                    {#if scrollY >= 1720 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Hugo Unosson</p>
@@ -142,12 +148,12 @@
             </div>
 
             <!-- About the Course -->
-            {#if scrollY >= 2770 - yOffset}
-                <h3 id="section3" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>About the Project</h3>
+            {#if scrollY >= 2805 - yOffset}
+                <h3 id="section3" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Background</h3>
             {:else}
                 <div id="section3" class="mt-64 py-64"></div>
             {/if}
-            {#if scrollY >= 2860 - yOffset}
+            {#if scrollY >= 2895 - yOffset}
                 <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>
                     We are studiyng software engineering at Chalmers. At the moment, we are participating a course in
                     <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
