@@ -94,7 +94,7 @@
             {#if scrollY >= 780 - yOffset}
                 <h3 id="section2" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
             {:else}
-                <div id="section2" class="mt-64 py-[1160px]"></div>
+                <div id="section2" class="mt-64 py-16"></div>
             {/if}
 
             <div class="grid grid-cols-2 gap-8 items-start mt-16">
@@ -107,6 +107,8 @@
                             <p class="text-dark-300">+46 73 441 1218</p>
                             <p class="text-dark-300">ludwigal@chalmers.se</p>
                         </div>
+                    {:else}
+                        <div class="py-[544px]"></div>
                     {/if}
                     {#if scrollY >= 1470 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
@@ -115,6 +117,8 @@
                             <p class="text-dark-300">+46 70 750 0980</p>
                             <p class="text-dark-300">hermanfo@chalmers.se</p>
                         </div>
+                    {:else}
+                        <div class="py-[576px]"></div>
                     {/if}
                     {#if scrollY >= 2045 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
@@ -123,6 +127,8 @@
                             <p class="text-dark-300">+46 73 814 4080</p>
                             <p class="text-dark-300">aronlu@chalmers.se</p>
                         </div>
+                    {:else}
+                        <div class="py-[576px]"></div>
                     {/if}
                 </div>
               
@@ -135,6 +141,8 @@
                             <p class="text-dark-300">+46 70 383 7424</p> 
                             <p class="text-dark-300">oskmey@chalmers.se</p>
                         </div>
+                    {:else}
+                        <div class="py-[544px]"></div>
                     {/if}
                     {#if scrollY >= 1720 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
@@ -143,6 +151,8 @@
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">hugou@chalmers.se</p>
                         </div>
+                    {:else}
+                        <div class="py-[576px]"></div>
                     {/if}
                 </div>
             </div>
@@ -163,6 +173,8 @@
                     focusing on leveraging advanced technologies such as AI-driven image generation and 
                     regional data insights to create highly relevant and market-specific images. 
                 </p>
+            {:else}
+                <div id="section3" class="mt-64 py-[196px]"></div>
             {/if}
         </main>
 
