@@ -5,6 +5,24 @@
     // Components
     import ArrowDown from "../svg/ArrowDown.svelte";
 
+    // Sidebar
+    function scrollTo(event: MouseEvent) {
+        event.preventDefault(); // Prevent default link behavior
+        const target = event.currentTarget as HTMLAnchorElement; 
+        const targetId = target.getAttribute('href')?.substring(1); // e.g. section1
+        
+        if (targetId) { 
+            if (targetId == "section3") {
+                
+            }
+
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
+
     // Navbar
     const tabs: string[] = ["About", "Demo", "References"];
     let selectedTab: string = tabs[0];
@@ -25,6 +43,14 @@
 <svelte:window bind:scrollY={scrollY}/>
 
 <div class="bg-dark-300 text-white font-body min-h-screen min-w-screen">
+    <nav class="flex items-center fixed top-1/2 left-4 -translate-y-1/2 z-51">
+        <ul class="flex flex-col gap-2">
+          <li><a href="#section1" on:click={scrollTo}>Our Vision</a></li>
+          <li><a href="#section2" on:click={scrollTo}>The Team</a></li>
+          <li><a href="#section3" on:click={scrollTo}>About the Project</a></li>
+        </ul>
+    </nav>
+
     <div class="max-w-4xl mx-auto">
         <nav class="py-4 flex justify-center w-full fixed top-0 left-0 z-50 drop-shadow-lg">
             <ul class="bg-dark-200 flex w-fit justify-center px-2 py-4 gap-4 rounded drop-shadow-lg">
@@ -49,7 +75,9 @@
 
             <!-- The Vision -->
             {#if scrollY >= 240 - yOffset}
-                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
+                <h3 id="section1" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
+            {:else}
+                <div id="section1" class="mt-64 py-32"></div>
             {/if}
 
             {#if scrollY >= 310 - yOffset}
@@ -58,9 +86,9 @@
 
             <!-- The Team -->
             {#if scrollY >= 660 - yOffset}
-                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
-            <!--{:else}
-                <div class="mt-48 py-16"></div>-->
+                <h3 id="section2" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
+            {:else}
+                <div id="section2" class="mt-64 py-[1160px]"></div>
             {/if}
 
             <div class="grid grid-cols-2 gap-8 items-start mt-16">
@@ -115,20 +143,20 @@
 
             <!-- About the Course -->
             {#if scrollY >= 2770 - yOffset}
-                <h3 class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>About the Project</h3>
+                <h3 id="section3" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>About the Project</h3>
+            {:else}
+                <div id="section3" class="mt-64 py-64"></div>
             {/if}
             {#if scrollY >= 2860 - yOffset}
                 <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>
-                    We are studiyng at software engineering at Chalmers. Currenlty we are studiyng <br>
+                    We are studiyng software engineering at Chalmers. At the moment, we are participating a course in
                     <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
-                        TEK830 - Digitalization and AI in practice</a>
-                    . <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
+                        Digitalization and AI in practice - TEK830</a>.
+                     <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
                     Our team is tasked with developing a software solution for IKEA, 
                     focusing on leveraging advanced technologies such as AI-driven image generation and 
                     regional data insights to create highly relevant and market-specific images. 
                 </p>
-            {:else}
-                <div class="py-64"></div>
             {/if}
         </main>
 
