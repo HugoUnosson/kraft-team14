@@ -133,12 +133,12 @@
                             <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Oskar Meyer</p>
                             <p class="text-dark-300">+46 70 383 7424</p> 
-                            <p class="text-dark-300">ludwigal@chalmers.se</p>
+                            <p class="text-dark-300">oskmey@chalmers.se</p>
                         </div>
                     {/if}
                     {#if scrollY >= 1720 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\hugo.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Hugo Unosson</p>
                             <p class="text-dark-300">+46 70 828 5135</p>
                             <p class="text-dark-300">hugou@chalmers.se</p>

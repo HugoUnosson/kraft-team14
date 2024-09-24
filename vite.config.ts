@@ -7,7 +7,9 @@ export default defineConfig({
 		fs: {
 		  allow: [
 			'static\\Chalmers_Logo.png',
-			'static\\ludwig.png'
+			'static\\ludwig.png',
+			'static\\herman.png',
+			'static\\hugo.png'
 		  ],
 		},
 	}
