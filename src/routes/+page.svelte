@@ -51,9 +51,10 @@
 <div class="bg-dark-300 text-white font-body min-h-screen min-w-screen">
     <nav class="fixed top-1/2 -translate-y-1/2 left-4 z-51">
         <ul class="flex flex-col gap-2 text-dark-400">
-          <li><a href="#section1" on:click={scrollTo} class:text-white={275 - yOffset < scrollY && scrollY <= 680 - yOffset}>Our Vision</a></li>
-          <li><a href="#section2" on:click={scrollTo} class:text-white={680 - yOffset < scrollY && scrollY <= 2805 - yOffset}>The Team</a></li>
-          <li><a href="#section3" on:click={scrollTo} class:text-white={2805 - yOffset < scrollY}>Background</a></li>
+            <li><a href="#hero"     on:click={scrollTo} class:text-white={scrollY <= 275 - yOffset}>KRAFT</a></li>
+            <li><a href="#section1" on:click={scrollTo} class:text-white={275 - yOffset < scrollY && scrollY <= 680 - yOffset}>Our Vision</a></li>
+            <li><a href="#section2" on:click={scrollTo} class:text-white={680 - yOffset < scrollY && scrollY <= 2805 - yOffset}>The Team</a></li>
+            <li><a href="#section3" on:click={scrollTo} class:text-white={2805 - yOffset < scrollY}>Background</a></li>
         </ul>
     </nav>
 
@@ -122,7 +123,7 @@
                     {/if}
                     {#if scrollY >= 2045 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\aron.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Aron Lundh</p>
                             <p class="text-dark-300">+46 73 814 4080</p>
                             <p class="text-dark-300">aronlu@chalmers.se</p>
@@ -136,7 +137,7 @@
                 <div class="flex flex-col gap-8 mt-64"> <!-- Adjust `mt-8` to lower the column -->
                     {#if scrollY >= 1145 - yOffset}
                         <div class="flex flex-col bg-light-100 gap-2 pb-4 rounded" transition:fly={{ y:20, delay:0}}>
-                            <img src="\ludwig.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
+                            <img src="\oskar.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                             <p class="text-dark-300 font-bold">Oskar Meyer</p>
                             <p class="text-dark-300">+46 70 383 7424</p> 
                             <p class="text-dark-300">oskmey@chalmers.se</p>
