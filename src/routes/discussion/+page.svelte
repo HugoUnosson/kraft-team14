@@ -4,6 +4,7 @@
 
 <div class="max-w-4xl mx-auto"> 
     <h1 class="pt-48 font-title text-3xl font-bold tracking-widest">Discussion</h1>  
+    <p class="mt-4">This page is about how our innovation fulfills the three Design Thinking Principles.</p>
 
     <!-- Usability -->
     <div class="mt-16">
@@ -29,7 +30,6 @@
         <p class="mt-8 font-bold">How does your innovation align with IKEA’s vision, business idea, sustainability strategy, and key values?</p>
         <p class="mt-8 font-bold">What unique value does your innovation offer compared to existing solutions in the market, particularly with regard to sustainability?</p>
         <p class="mt-4">Our “innovation” offers a much better/simplified interface specified for generating prompts that are “tailored” for changing the environment around the chosen IKEA product. It can be very challenging to find and use an AI that can generate good images, while still retaining the whole selected product.</p>
-        <p class="mt-4">Creating concept art is a time consuming and expensive process, each picture takes a lot of effort to produce, and most of them don't see the light of day. Our innovation aims to make this process more efficient. Our idea is to generate pictures using AI tools. The user gives the program a picture of a piece of furniture and in return gets the furniture in a new context, with new surroundings and a different appeal.</p>
         <p class="mt-8 font-bold">How does your innovation contribute to environmental and social sustainability in a practical way?</p>
     </div>
 </div>
