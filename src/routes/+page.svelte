@@ -65,7 +65,7 @@
 
         <!-- The Vision -->
         {#if scrollY >= 275}
-            <h3 id="section1" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
+            <h3 id="section1" class="mt-64 text-4xl font-title font-bold tracking-widest" transition:fly={{ y:20, delay:0}}>Our Vision</h3>
         {:else}
             <div id="section1" class="mt-64 py-32"></div>
         {/if}
@@ -76,7 +76,7 @@
 
         <!-- The Team -->
         {#if scrollY >= 780}
-            <h3 id="section2" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>The Team</h3>
+            <h3 id="section2" class="mt-64 text-4xl font-title font-bold tracking-widest" transition:fly={{ y:20, delay:0}}>The Team</h3>
         {:else}
             <div id="section2" class="mt-64 py-16"></div>
         {/if}
@@ -143,14 +143,14 @@
 
         <!-- About the Course -->
         {#if scrollY >= 2805}
-            <h3 id="section3" class="mt-64 text-4xl font-title" transition:fly={{ y:20, delay:0}}>Background</h3>
+            <h3 id="section3" class="mt-64 text-4xl font-title font-bold tracking-widest" transition:fly={{ y:20, delay:0}}>Background</h3>
         {:else}
             <div id="section3" class="mt-64 py-64"></div>
         {/if}
         {#if scrollY >= 2895}
             <p class="mt-16 text-xl" transition:fly={{ y:20, delay:0}}>
                 We are studiyng software engineering at Chalmers. At the moment, we are participating a course in
-                <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025">
+                <a class="underline" href="https://www.chalmers.se/utbildning/dina-studier/hitta-kurs-och-programplaner/kursplaner/TEK830/?acYear=2024%2F2025" target="_blank" rel="noopener noreferrer" >
                     Digitalization and AI in practice - TEK830</a>.
                     <br> <br>The course is taught by Professor Robin Teigland, where we are undertaking a capstone project in collaboration with IKEA. 
                 Our team is tasked with developing a software solution for IKEA, 
