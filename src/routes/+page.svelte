@@ -56,8 +56,8 @@
 
 <div class="max-w-4xl mx-auto">    
     <main class="flex flex-col items-center text-center">
-        <h1 class="text-10xl mt-32 font-title tracking-widest font-bold">KRAFT</h1>
-        <h2 class="text-dark-400 text-2xl">America's Next Kitchens</h2>
+        <h1 class="text-10xl mt-32 font-title tracking-widest font-bold">PÅHITTIG</h1>
+        <h2 class="text-dark-400 text-2xl">Reimagining Kitchens, One Pixel at a Time</h2>
         <div class="flex mt-32 gap-1">
             <p class="text-dark-400">Scroll to explore</p>
             <ArrowDown/>
@@ -99,7 +99,7 @@
                         <img src="\herman.png" alt="team meber 1" class="m-4 drop-shadow-xl rounded">
                         <p class="text-dark-300 font-bold">Herman Forsberg</p>
                         <p class="text-dark-300">+46 70 750 0980</p>
-                        <p class="text-dark-300">hermanfo@chalmers.se</p>
+                        <p class="text-dark-300">hermanru@chalmers.se</p>
                     </div>
                 {:else}
                     <div class="py-[576px]"></div>

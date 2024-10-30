@@ -4,7 +4,7 @@
 
 <div class="max-w-4xl mx-auto"> 
     <h1 class="pt-48 font-title text-3xl font-bold tracking-widest">Discussion</h1>  
-    <p class="mt-4">This page is about how our innovation fulfills the three Design Thinking Principles.</p>
+    <p class="mt-4">This page is about how our innovation fulfills the three Design Thinking Principles. We also discuss how we used AI.</p>
 
     <!-- Usability -->
     <div class="mt-16">
@@ -26,11 +26,18 @@
     </div>
 
     <!-- Viability -->
-    <div class="mt-16 pb-16">
+    <div class="mt-16">
         <h2 class="text-dark-400">Viability</h2>
         <p class="mt-8 font-bold">How does your innovation align with IKEA’s vision, business idea, sustainability strategy, and key values?</p>
         <p class="mt-4">Our innovation certainly aligns with IKEAs value of caring for the planet, changing the way that concept art is generated will cut the material needs of production. Instead the user will have concept art a few button clicks away.</p>
         <p class="mt-8 font-bold">What unique value does your innovation offer compared to existing solutions in the market, particularly with regard to sustainability?</p>
         <p class="mt-4">Our innovation offers a much better/simplified interface specified for generating prompts that are “tailored” for changing the environment around the chosen IKEA product. It can be very challenging to find and use an AI that can generate good images, while still retaining the whole selected product. In regards to sustainability it doesn’t offer anything new compared to other image generating services. The real gain in sustainability comes from the specific user group we have. To not have to create concept art the labor and material consuming way and instead generate images with a computer is a victory for the environment.</p>
+    </div>
+
+    <!-- AI -->
+    <div class="mt-16 pb-16">
+        <h2 class="text-dark-400">AI</h2>
+        <p class="mt-8 font-bold">How did we use AI in our Capstone?</p>
+        <p class="mt-4">Our product is highly dependent on generative AI. The core idea is to use an AI model to generate images based on prompting and an image to image feature. More specifically we used stable diffusion, which is an open source generative AI model.</p>
     </div>
 </div>

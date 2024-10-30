@@ -2,7 +2,7 @@
     import "../app.css";
 
     // Navbar
-    const tabs: string[] = ["About", "Demo", "Discussion", "References"];
+    const tabs: string[] = ["About", "Demo", "Pitch", "Discussion", "References"];
     let selectedTab: string = tabs[0];
 </script>
   
