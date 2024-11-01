@@ -8,7 +8,7 @@
     <!-- Final pitch -->
     <div class="mt-16 flex justify-center">
         <video controls width="800">
-            <source src="/Påhittig-Final-Pitch.mp4" type="video/mp4" />
+            <source src="/FinalPitch_Team14.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>
